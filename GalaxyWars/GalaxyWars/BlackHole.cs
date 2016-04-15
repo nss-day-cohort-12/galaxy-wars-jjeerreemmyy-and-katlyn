@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
-  class Program
+  class BlackHole
   {
     static void Main(string[] args)
     {
