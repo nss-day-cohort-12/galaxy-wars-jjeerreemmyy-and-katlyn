@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlackHole.cs" />
-    <Compile Include="Draenei.cs" />
+    <Compile Include="MurkBlood.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
