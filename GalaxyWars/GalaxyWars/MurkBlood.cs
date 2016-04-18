@@ -14,6 +14,7 @@ namespace GalaxyWars
     public string bodyType = "Large, Hunched, Muscular";
     public bool filteredBreathing = true;
     public int horns = 3;
+    public int startingPopulation = 1000000;
 
     private RoverShip _rovership;
 
@@ -29,43 +30,19 @@ namespace GalaxyWars
       }
     }
 
-    bool IWarfare.violent
+    bool violent()
     {
-      get
-      {
-        throw new NotImplementedException();
-      }
-
-      set
-      {
-        throw new NotImplementedException();
-      }
+      return true;
     }
 
-    string IWarfare.weaponSpecialty
+    public string weaponSpecialty()
     {
-      get
-      {
-        throw new NotImplementedException();
-      }
-
-      set
-      {
-        throw new NotImplementedException();
-      }
+      return "Electric Steel";
     }
 
-    bool IWarfare.undergroundBarracks
+    public bool undergroundBarracks()
     {
-      get
-      {
-        throw new NotImplementedException();
-      }
-
-      set
-      {
-        throw new NotImplementedException();
-      }
+      return true;
     }
   }
 }

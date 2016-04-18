@@ -44,9 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlackHole.cs" />
+    <Compile Include="Draenei.cs" />
+    <Compile Include="IWarfare.cs" />
     <Compile Include="MurkBlood.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoverShip.cs" />
     <Compile Include="ShaTar.cs" />
+    <Compile Include="Spaceship.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

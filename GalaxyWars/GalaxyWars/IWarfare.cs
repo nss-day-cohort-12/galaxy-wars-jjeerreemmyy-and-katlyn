@@ -8,17 +8,10 @@ namespace GalaxyWars
 {
   interface IWarfare
   {
-    bool violent
-    {
-      get; set;
-    }
-    string weaponSpecialty
-    {
-      get; set;
-    }
-    bool undergroundBarracks
-    {
-      get; set;
-    }
+    bool violent();
+
+    string weaponSpecialty();
+
+    bool undergroundBarracks();
   }
 }

@@ -8,7 +8,7 @@ namespace GalaxyWars
 {
   class RoverShip
   {
-    public string name = "KillerRoverBattleSpaceShip";
+    public string name = "Rover Ship";
     public bool canDrill = true;
     public int gunTurrets = 10;
   }
