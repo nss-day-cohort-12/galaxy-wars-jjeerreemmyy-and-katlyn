@@ -83,7 +83,7 @@ namespace GalaxyWars
         if (y % 25 == 0)
         {
           Random rnd = new Random();
-          int anomoly = rnd.Next(1, 3);
+          int anomoly = rnd.Next(1, 4);
           switch (anomoly)
           {
             case 1:
@@ -109,20 +109,41 @@ namespace GalaxyWars
         if (currMurkPop <= 0)
         {
           Console.WriteLine("Sadly, after " + y + " years of war. " + murky.name + "'s kingdom and the race of MurkBlood are now EXTINCT.");
+          if (currAldyPop > currShatPop)
+          {
+            Console.WriteLine(aldy.name + " ,and the race of Aldor now rule the planet of " + aldy.planetName + ".");
+          } else
+          {
+            Console.WriteLine(shatty.name + " ,and the race of Sha'Tar now rule the planet of " + shatty.planetName + ".");
+          };
           break;
         } else if (currShatPop <= 0)
         {
           Console.WriteLine("Sadly, after " + y + " years of war. " + shatty.name + "'s kingdom and the race of Sha'Tar are now EXTINCT.");
+          if (currAldyPop > currMurkPop)
+          {
+            Console.WriteLine(aldy.name + " ,and the race of Aldor now rule the planet of " + aldy.planetName + ".");
+          }
+          else
+          {
+            Console.WriteLine(murky.name + " ,and the race of MurkBloods now rule the planet of " + murky.planetName + ".");
+          };
           break;
         } else if (currAldyPop <= 0)
         {
           Console.WriteLine("Sadly, after " + y + " years of war. " + aldy.name + "'s kingdom and the race of Aldor are now EXTINCT.");
+          if (currMurkPop > currShatPop)
+          {
+            Console.WriteLine(murky.name + " ,and the race of MurkBloods now rule the planet of " + murky.planetName + ".");
+          }
+          else
+          {
+            Console.WriteLine(shatty.name + " ,and the race of Sha'Tar now rule the planet of " + shatty.planetName + ".");
+          };
           break;
         }
 
-        Console.WriteLine("The current population of Aldor is " + currAldyPop.ToString("#") + ".");
-        Console.WriteLine("The current population of MurkBlood is " + currMurkPop.ToString("#") + ".");
-        Console.WriteLine("The current population of ShaTar is " + currShatPop.ToString("#") + ".");
+        Console.WriteLine("This year, the ongoing war has left only " + currAldyPop.ToString("#") + " people of Aldor alive, " + currMurkPop.ToString("#") + " people of the MurkBlood tribe, and " + currShatPop.ToString("#") + " people left in the tribe of Sha'Tar.");
       }
 
         
