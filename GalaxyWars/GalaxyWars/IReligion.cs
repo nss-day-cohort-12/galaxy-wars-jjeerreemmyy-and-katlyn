@@ -8,5 +8,8 @@ namespace GalaxyWars
 {
     interface IReligion
     {
+        bool telepathy();
+        bool hasTemple();
+        bool persuasive();
     }
 }

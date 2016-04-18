@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
-    class Battleship
+    class Battleship : Vehicle
     {
     public string name = "Battleship";
     public bool hasForceFields = true;
     public bool hasInvisibilty = true;
-  }
+    public override string Move()
+        {
+            return "hyersonic speed";
+        }
+    }
 }

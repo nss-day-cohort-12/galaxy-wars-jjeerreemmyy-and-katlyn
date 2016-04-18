@@ -21,6 +21,9 @@ namespace GalaxyWars
 
       ShaTar shatty = new ShaTar();
       shatty.name = "Shatty";
+      Spaceship spaceship = new Spaceship();
+      spaceship.pilots = new List<Draenei>();
+      spaceship.pilots.Add(shatty);
       shatty.planetName = "Krypton";
 
       int y = 1;
@@ -123,6 +126,7 @@ namespace GalaxyWars
         Console.WriteLine("The current population of Aldor is " + currAldyPop.ToString("#") + ".");
         Console.WriteLine("The current population of MurkBlood is " + currMurkPop.ToString("#") + ".");
         Console.WriteLine("The current population of ShaTar is " + currShatPop.ToString("#") + ".");
+        Console.WriteLine("{0} is awesome" , spaceship.Move());
       }
 
         
