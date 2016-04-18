@@ -30,7 +30,7 @@ namespace GalaxyWars
       }
     }
 
-    bool violent()
+    public bool violent()
     {
       return true;
     }
@@ -44,5 +44,6 @@ namespace GalaxyWars
     {
       return true;
     }
+
   }
 }
