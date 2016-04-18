@@ -89,14 +89,17 @@ namespace GalaxyWars
             case 1:
               relBeatsWarfare = false;
               warBeatsReligion = true;
+              Console.WriteLine("The wars of " + murky.planetName + " have now raged for " + y + " years, and, after losing " + currMurkPop.ToString("#") + " of their people, a celestial anomoly has occured in favor of the MurkBlood!");
               break;
             case 2:
               warBeatsScience = false;
               sciBeatsWarfare = true;
+              Console.WriteLine("The wars of " + shatty.planetName + " have now raged for " + y + " years, and, after losing " + currShatPop.ToString("#") + " of their people, a celestial anomoly has occured in favor of the Sha'Tar!");
               break;
             case 3:
               sciBeatsReligion = false;
               relBeatsScience = true;
+              Console.WriteLine("The wars of " + aldy.planetName + " have now raged for " + y + " years, and, after losing " + currAldyPop.ToString("#") + " of their people, a celestial anomoly has occured in favor of the Aldor!");
               break;
           }
         }
@@ -105,15 +108,15 @@ namespace GalaxyWars
 
         if (currMurkPop <= 0)
         {
-          Console.WriteLine("The MurkBlood species is EXTINCT.");
+          Console.WriteLine("Sadly, after " + y + " years of war. " + murky.name + "'s kingdom and the race of MurkBlood are now EXTINCT.");
           break;
         } else if (currShatPop <= 0)
         {
-          Console.WriteLine("The ShaTar species is EXTINCT.");
+          Console.WriteLine("Sadly, after " + y + " years of war. " + shatty.name + "'s kingdom and the race of Sha'Tar are now EXTINCT.");
           break;
         } else if (currAldyPop <= 0)
         {
-          Console.WriteLine("The Aldor species is EXTINCT.");
+          Console.WriteLine("Sadly, after " + y + " years of war. " + aldy.name + "'s kingdom and the race of Aldor are now EXTINCT.");
           break;
         }
 
