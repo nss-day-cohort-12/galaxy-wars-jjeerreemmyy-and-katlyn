@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
-  class Spaceship
+  interface ISpace
   {
-    public string name = "Spaceship";
-    public bool evasive = true;
-    public bool lasers = true;
-
+    bool advancedSpaceStation();
+    bool evasion();
+    string highTech();
   }
 }
