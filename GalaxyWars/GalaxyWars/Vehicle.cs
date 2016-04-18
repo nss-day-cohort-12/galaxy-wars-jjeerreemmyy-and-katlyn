@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
-    class Battleship
-    {
-    public string name = "Battleship";
-    public bool hasForceFields = true;
-    public bool hasInvisibilty = true;
+  class Vehicle
+  {
   }
 }

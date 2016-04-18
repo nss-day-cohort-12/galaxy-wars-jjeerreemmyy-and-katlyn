@@ -14,12 +14,7 @@ namespace GalaxyWars
         public string BodyType =  "tall, upright, lean, human like";
         public bool HasGills = true;
         public int Antennae = 6 ;
-        private Battleship _battleship;
-        public Battleship battleship 
-            {
-            get { return _battleship; }
-            set { _battleship = value; }
-            }
+
         public int Population = 1000000;
         public bool telepathy()
         {

@@ -16,20 +16,6 @@ namespace GalaxyWars
     public int horns = 3;
     public int startingPopulation = 1000000;
 
-    private RoverShip _rovership;
-
-    public RoverShip rovership
-    {
-      get
-      {
-        return _rovership;
-      }
-      set
-      {
-        _rovership = value;
-      }
-    }
-
     public bool violent()
     {
       return true;
