@@ -21,17 +21,17 @@ namespace GalaxyWars
             set { _battleship = value; }
             }
         public int Population = 1000000;
-        bool telepathy()
+        public bool telepathy()
         {
             return true;
         }
 
-        bool hasTemple()
+        public bool hasTemple()
         {
             return true;
         }
 
-        bool persuasive()
+        public bool persuasive()
         {
             return true;
         }
