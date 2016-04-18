@@ -11,7 +11,7 @@ namespace GalaxyWars
     private string _name = "";
     private string _planetName = "";
     public bool hasHooves = true;
-    public string starType = "BackHole";
+    public string starType = "BlackHole";
 
     public string name
     {
