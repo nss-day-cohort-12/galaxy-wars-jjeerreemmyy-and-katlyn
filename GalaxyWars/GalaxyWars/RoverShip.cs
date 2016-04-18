@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
-  interface IWarfare
+  class RoverShip
   {
-    bool violent();
-
-    string weaponSpecialty();
-
-    bool undergroundBarracks();
+    public string name = "Rover Ship";
+    public bool canDrill = true;
+    public int gunTurrets = 10;
   }
 }
