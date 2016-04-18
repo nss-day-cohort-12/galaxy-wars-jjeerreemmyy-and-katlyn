@@ -8,5 +8,10 @@ namespace GalaxyWars
 {
   class Vehicle
   {
+        public virtual string Move()
+        {
+            return "at a standstill";
+        }
+        public List<Draenei> pilots;
   }
 }
