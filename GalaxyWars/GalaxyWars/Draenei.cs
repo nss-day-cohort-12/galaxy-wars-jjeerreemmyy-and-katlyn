@@ -8,6 +8,9 @@ namespace GalaxyWars
 {
   public class Draenei
   {
+    //Primary Species class.
+
+        //Override of Desc() which can accept an overload in the species' description.
         public virtual string Desc() { return "hooved aliens"; } 
         private string _name = "";
         private string _planetName = "";
