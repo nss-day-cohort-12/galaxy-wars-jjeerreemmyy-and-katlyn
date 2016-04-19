@@ -13,7 +13,7 @@ namespace GalaxyWars
     public int gunTurrets = 10;
     public override string Move()
         {
-            return "warp speed";
+            return "Warp speed";
         }
     }
 }

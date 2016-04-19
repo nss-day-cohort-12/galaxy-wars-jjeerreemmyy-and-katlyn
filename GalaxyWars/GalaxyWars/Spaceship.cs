@@ -13,7 +13,7 @@ namespace GalaxyWars
     public bool lasers = true;
     public override string Move()
         {
-            return "light speed";
+            return "Light speed";
         }
     }
 }

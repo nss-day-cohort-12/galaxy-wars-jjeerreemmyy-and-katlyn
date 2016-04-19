@@ -13,7 +13,7 @@ namespace GalaxyWars
     public bool hasInvisibilty = true;
     public override string Move()
         {
-            return "hyersonic speed";
+            return "Hyersonic speed";
         }
     }
 }

@@ -9,7 +9,7 @@ namespace GalaxyWars
   class MurkBlood : Draenei, IWarfare
   {
     public override string Desc()
-        { return "Murkblood, the hostile tribe of broken Draenei."; }
+        { return "Murkblood, the hostile tribe of broken Draenei.\n"; }
     public string skin = "Green";
     public string clothing = "Battle Armor"; 
     public string bodyType = "Large, Hunched, Muscular";
