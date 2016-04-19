@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
+    //ShaTar is a Draenei and is the space-faring species.
     class ShaTar : Draenei, ISpace
     { 
+
+    // Overloads the description of the ShaTar class of Draenei.
     public override string Desc() {return "The Sha'tar, or 'born of light,' are Draenei that aided the creation of the New Space Order.\n"; }
     public string skin = "Blue";
     public string clothing = "Advanced Space Suite";

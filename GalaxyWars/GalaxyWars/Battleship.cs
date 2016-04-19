@@ -11,6 +11,8 @@ namespace GalaxyWars
     public string name = "Battleship";
     public bool hasForceFields = true;
     public bool hasInvisibilty = true;
+
+    //Overloads the Battleship class of vehicle.
     public override string Move()
         {
             return "Hyersonic speed";

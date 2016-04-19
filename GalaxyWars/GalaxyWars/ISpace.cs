@@ -8,6 +8,7 @@ namespace GalaxyWars
 {
   interface ISpace
   {
+    //Defines the properties of the space-faring species.
     bool advancedSpaceStation();
     bool evasion();
     string highTech();

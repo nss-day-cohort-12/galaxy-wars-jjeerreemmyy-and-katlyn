@@ -8,6 +8,7 @@ namespace GalaxyWars
 {
     interface IReligion
     {
+        //Defines the properties of the religious species.
         bool telepathy();
         bool hasTemple();
         bool persuasive();

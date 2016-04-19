@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
+  //The primary class of BlackHole is the galaxy in which the galaxy wars will take place.
   class BlackHole
   {
     static void Main(string[] args)

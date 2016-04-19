@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
+  //Aldor is a Draenei and is religious.
     class Aldor: Draenei, IReligion
     {
+        //Overloads the description for the Aldor class of Draenei.
         public override string Desc()
             { return "This faction is made up of priests.\n"; } 
         public string Skin = "Red";
