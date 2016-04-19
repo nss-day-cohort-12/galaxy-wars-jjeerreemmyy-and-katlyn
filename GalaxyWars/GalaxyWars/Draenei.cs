@@ -8,23 +8,24 @@ namespace GalaxyWars
 {
   class Draenei
   {
-    private string _name = "";
-    private string _planetName = "";
-    public bool hasHooves = true;
-    public string starType = "BlackHole";
+        public virtual string Desc() { return "hooved aliens"; } 
+        private string _name = "";
+        private string _planetName = "";
+        public bool hasHooves = true;
+        public string starType = "BlackHole";
 
-    public string name
-    {
-      get
-      {
-        return _name;
-      }
-      set
-      {
-        if (value != "")
+        public string name
         {
-          _name = value;
-        }
+            get
+            {
+             return _name;
+             }
+            set
+             {
+             if (value != "")
+                {
+                 _name = value;
+            }
 
       }
     }
