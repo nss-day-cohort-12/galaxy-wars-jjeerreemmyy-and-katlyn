@@ -8,7 +8,8 @@ namespace GalaxyWars
 {
   class MurkBlood : Draenei, IWarfare
   {
-    public string description = "Murkblood, the hostile tribe of broken Draenei.";
+    public override string Desc()
+        { return "Murkblood, the hostile tribe of broken Draenei."; }
     public string skin = "Green";
     public string clothing = "Battle Armor";
     public string bodyType = "Large, Hunched, Muscular";
