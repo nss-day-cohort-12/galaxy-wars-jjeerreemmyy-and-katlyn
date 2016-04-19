@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
-  class MurkBlood : Draenei, IWarfare
+  public class MurkBlood : Draenei, IWarfare
   {
     public override string Desc()
         { return "Murkblood, the hostile tribe of broken Draenei.\n"; }

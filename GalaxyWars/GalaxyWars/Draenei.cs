@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
-  class Draenei
+  public class Draenei
   {
         public virtual string Desc() { return "hooved aliens"; } 
         private string _name = "";
