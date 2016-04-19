@@ -72,22 +72,28 @@ namespace GalaxyWars
       while (currMurkPop >= 0 || currShatPop >= 0 || currAldyPop >= 0)
       {
         double murkWeightedBonus = currMurkPop * .02;
-        double murkReligiousBonus = currMurkPop * .01;
-        currMurkPop = currMurkPop - 20000;
+        double murkReligiousBonus = currMurkPop * .005;
+        Random rnd1 = new Random();
+        int murkPopLoss = rnd1.Next(10000, 15000);
+        currMurkPop = currMurkPop - murkPopLoss;
         currMurkPop = currMurkPop - 2500;
         currMurkPop = currMurkPop - murkReligiousBonus;
         Console.WriteLine("{0} is awesome! " + murky.name + " has attacked at {0}!\n", rovership.Move());
 
         double shatWeightedBonus = currShatPop * .02;
-        double shatReligiousBonus = currShatPop * .01;
-        currShatPop = currShatPop - 20000;
+        double shatReligiousBonus = currShatPop * .005;
+        Random rnd2 = new Random();
+        int shatPopLoss = rnd2.Next(10000, 15000);
+        currShatPop = currShatPop - shatPopLoss;
         currShatPop = currShatPop + 5000;
         currShatPop = currShatPop - 10000;
         currShatPop = currShatPop - shatReligiousBonus;
         Console.WriteLine("{0} is awesome! " + shatty.name + " has attacked at {0}!\n", spaceship.Move());
 
         double aldyWeightedBonus = currAldyPop * .02;
-        currAldyPop = currAldyPop - 20000;
+        Random rnd3 = new Random();
+        int aldyPopLoss = rnd3.Next(10000, 15000);
+        currAldyPop = currAldyPop - aldyPopLoss;
         currAldyPop = currAldyPop - 10000;
         currAldyPop = currAldyPop + murkReligiousBonus;
         currAldyPop = currAldyPop + shatReligiousBonus;
@@ -100,7 +106,7 @@ namespace GalaxyWars
         else if (warBeatsReligion)
         {
           currAldyPop = currAldyPop - aldyWeightedBonus;
-        }
+        };
 
         if (warBeatsScience)
         {
@@ -108,7 +114,7 @@ namespace GalaxyWars
         } else if (sciBeatsWarfare)
         {
           currMurkPop = currMurkPop - murkWeightedBonus;
-        }
+        };
 
         if (sciBeatsReligion)
         {
@@ -116,7 +122,7 @@ namespace GalaxyWars
         } else if (relBeatsScience)
         {
           currShatPop = currShatPop - shatWeightedBonus;
-        }
+        };
 
         if (y % 25 == 0)
         {
@@ -149,10 +155,10 @@ namespace GalaxyWars
           Console.WriteLine("Sadly, after " + y + " years of war.\n " + murky.name + "'s kingdom and the race of MurkBlood are now EXTINCT.\n");
           if (currAldyPop > currShatPop)
           {
-            Console.WriteLine(aldy.name + " ,and the race of Aldor now rule the planet of " + aldy.planetName + ".");
+            Console.WriteLine(aldy.name + ", and the race of Aldor now rule the planet of " + aldy.planetName + ".");
           } else
           {
-            Console.WriteLine(shatty.name + " ,and the race of Sha'Tar now rule the planet of " + shatty.planetName + ".");
+            Console.WriteLine(shatty.name + ", and the race of Sha'Tar now rule the planet of " + shatty.planetName + ".");
           };
           break;
         } else if (currShatPop <= 0)
@@ -160,11 +166,11 @@ namespace GalaxyWars
           Console.WriteLine("Sadly, after " + y + " years of war.\n " + shatty.name + "'s kingdom and the race of Sha'Tar are now EXTINCT.\n");
           if (currAldyPop > currMurkPop)
           {
-            Console.WriteLine(aldy.name + " ,and the race of Aldor now rule the planet of " + aldy.planetName + ".");
+            Console.WriteLine(aldy.name + ", and the race of Aldor now rule the planet of " + aldy.planetName + ".");
           }
           else
           {
-            Console.WriteLine(murky.name + " ,and the race of MurkBloods now rule the planet of " + murky.planetName + ".");
+            Console.WriteLine(murky.name + ", and the race of MurkBloods now rule the planet of " + murky.planetName + ".");
           };
           break;
         } else if (currAldyPop <= 0)
@@ -172,11 +178,11 @@ namespace GalaxyWars
           Console.WriteLine("Sadly, after " + y + " years of war.\n " + aldy.name + "'s kingdom and the race of Aldor are now EXTINCT.\n");
           if (currMurkPop > currShatPop)
           {
-            Console.WriteLine(murky.name + " ,and the race of MurkBloods now rule the planet of " + murky.planetName + ".");
+            Console.WriteLine(murky.name + ", and the race of MurkBloods now rule the planet of " + murky.planetName + ".");
           }
           else
           {
-            Console.WriteLine(shatty.name + " ,and the race of Sha'Tar now rule the planet of " + shatty.planetName + ".");
+            Console.WriteLine(shatty.name + ", and the race of Sha'Tar now rule the planet of " + shatty.planetName + ".");
           };
           break;
         }
