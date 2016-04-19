@@ -16,20 +16,6 @@ namespace GalaxyWars
     public int horns = 2;
     public int startingPopualtion = 1000000;
 
-    private Spaceship _spaceship;
-
-    public Spaceship spaceship
-    {
-      get
-      {
-        return _spaceship;
-      }
-      set
-      {
-        _spaceship = value;
-      }
-    }
-
     public bool advancedSpaceStation()
     {
       return true;

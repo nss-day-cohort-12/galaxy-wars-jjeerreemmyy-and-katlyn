@@ -21,6 +21,9 @@ namespace GalaxyWars
 
       ShaTar shatty = new ShaTar();
       shatty.name = "Shatty";
+      Spaceship spaceship = new Spaceship();
+      spaceship.pilots = new List<Draenei>();
+      spaceship.pilots.Add(shatty);
       shatty.planetName = "Krypton";
 
       int y = 1;
@@ -144,6 +147,8 @@ namespace GalaxyWars
         }
 
         Console.WriteLine("This year, the ongoing war has left only " + currAldyPop.ToString("#") + " people of Aldor alive, " + currMurkPop.ToString("#") + " people of the MurkBlood tribe, and " + currShatPop.ToString("#") + " people left in the tribe of Sha'Tar.");
+
+        Console.WriteLine("{0} is awesome" , spaceship.Move());
       }
 
         

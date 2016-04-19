@@ -47,16 +47,15 @@
     <Compile Include="Battleship.cs" />
     <Compile Include="BlackHole.cs" />
     <Compile Include="Draenei.cs" />
-
     <Compile Include="ISpace.cs" />
     <Compile Include="IReligion.cs" />
     <Compile Include="IWarfare.cs" />
-
     <Compile Include="MurkBlood.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoverShip.cs" />
     <Compile Include="ShaTar.cs" />
     <Compile Include="Spaceship.cs" />
+    <Compile Include="Vehicle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
