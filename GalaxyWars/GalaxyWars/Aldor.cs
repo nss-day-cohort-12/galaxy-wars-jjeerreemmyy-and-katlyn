@@ -9,7 +9,7 @@ namespace GalaxyWars
     class Aldor: Draenei, IReligion
     {
         public override string Desc()
-            { return "This faction is made up of priests"; } 
+            { return "This faction is made up of priests.\n"; } 
         public string Skin = "Red";
         public string clothing = "Robes";
         public string BodyType =  "tall, upright, lean, human like";
