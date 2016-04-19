@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
-  class Draenei
+  public class Draenei
   {
     //Primary Species class.
 
