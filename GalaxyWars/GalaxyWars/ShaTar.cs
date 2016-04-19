@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace GalaxyWars
 {
     class ShaTar : Draenei, ISpace
-    {
+    { 
     public override string Desc() {return "The Sha'tar, or 'born of light,' are Draenei that aided the creation of the New Space Order."; }
     public string skin = "Blue";
     public string clothing = "Advanced Space Suite";

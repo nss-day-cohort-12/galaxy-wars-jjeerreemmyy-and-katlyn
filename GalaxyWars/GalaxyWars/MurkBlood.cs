@@ -11,7 +11,7 @@ namespace GalaxyWars
     public override string Desc()
         { return "Murkblood, the hostile tribe of broken Draenei."; }
     public string skin = "Green";
-    public string clothing = "Battle Armor";
+    public string clothing = "Battle Armor"; 
     public string bodyType = "Large, Hunched, Muscular";
     public bool filteredBreathing = true;
     public int horns = 3;
