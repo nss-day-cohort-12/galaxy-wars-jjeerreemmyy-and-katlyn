@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
+  //Murkblood is a Draenei and is the warmongering species.
   class MurkBlood : Draenei, IWarfare
   {
+    //Overloads the description for the MurkBlood class of Draenei.
     public override string Desc()
         { return "Murkblood, the hostile tribe of broken Draenei.\n"; }
     public string skin = "Green";

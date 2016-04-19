@@ -8,6 +8,7 @@ namespace GalaxyWars
 {
   interface IWarfare
   {
+    //Defines the properties of a warmongering species.
     bool violent();
 
     string weaponSpecialty();
